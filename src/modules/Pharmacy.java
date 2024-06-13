@@ -14,6 +14,7 @@ import java.awt.Toolkit;
 import javax.swing.ImageIcon;
 import classes.*;
 import utils.DBConnection;
+import modules.Warning;
 
 public class Pharmacy extends javax.swing.JFrame {
 
@@ -128,7 +129,7 @@ public class Pharmacy extends javax.swing.JFrame {
             pre=con.prepareStatement(sql);
             res=pre.executeQuery();
             while(res.next()){
-                // TODO: Warning warning = new Warning();
+                Warning warning = new Warning();
                 ex_year = Integer.parseInt(res.getString("EXPIRATION_DATE").split("-")[2]);
                 ex_month = Integer.parseInt(res.getString("EXPIRATION_DATE").split("-")[1]);
                 ex_day = Integer.parseInt(res.getString("EXPIRATION_DATE").split("-")[0]);
@@ -139,7 +140,7 @@ public class Pharmacy extends javax.swing.JFrame {
                     if(ex_month-current_month==2){
                         ex=1;
                         almost_expired_bar = res.getString("BARCODE");
-                        // warning.setVisible(true);
+                        warning.setVisible(true);
                     }else if(ex_month==current_month){
                         if(ex_day==current_day){
                             ex=0;
