@@ -1,20 +1,14 @@
 package modules;
 
 import java.awt.Color;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import java.awt.Font;
-import java.awt.Toolkit;
-import javax.swing.ImageIcon;
-
-import utils.DBConnection;
 import utils.ChangeStyle;
+import utils.DBConnection;
 
 public class Login extends javax.swing.JFrame {
 
@@ -40,7 +34,7 @@ public class Login extends javax.swing.JFrame {
     static String NAME;
 
     public Login() {
-        setIconImage(Toolkit.getDefaultToolkit().getImage("src/resources/imgs/LoginIcon.png"));
+        setIconImage(Toolkit.getDefaultToolkit().getImage("src/resources/imgs/login.png"));
         initComponents();
         con = DBConnection.connect();
         new ChangeStyle().changelook();
@@ -92,7 +86,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unlikely-arg-type")
-private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton1ActionPerformed
+private void jButton1ActionPerformed() {// GEN-FIRST:event_jButton1ActionPerformed
         if (id.getText().equals("") || pass.getPassword().equals("")) {
             JOptionPane.showMessageDialog(null, "Complete Your Login Information", "Missing Information", 2);
         } else {
@@ -129,7 +123,7 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIR
         }
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void jButton2ActionPerformed() {
         System.exit(0);
     }
 
@@ -159,7 +153,7 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIR
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); 
         jLabel1.setText("Login Form");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -193,22 +187,26 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIR
         jLabel4.setText("User_Password : ");
 
         id.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 idMouseClicked(evt);
             }
         });
         id.addKeyListener(new java.awt.event.KeyAdapter() {
+            @Override
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 idKeyReleased(evt);
             }
         });
 
         pass.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 passMouseClicked(evt);
             }
         });
         pass.addKeyListener(new java.awt.event.KeyAdapter() {
+            @Override
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 passKeyReleased(evt);
             }
@@ -250,18 +248,14 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIR
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
+        jButton1.addActionListener((java.awt.event.ActionEvent evt) -> {
+            jButton1ActionPerformed();
         });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
+        jButton2.addActionListener((java.awt.event.ActionEvent evt) -> {
+            jButton2ActionPerformed();
         });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -288,7 +282,7 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIR
         jPanel5.setBackground(new java.awt.Color(51, 51, 51));
         jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); 
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("Note : Password should be at least 6 Characters ");
 
