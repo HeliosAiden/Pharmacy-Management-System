@@ -908,7 +908,7 @@ public class Pharmacy extends javax.swing.JFrame {
         today.setText("00-00-0000");
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/Apps-session-logout-icon.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("src/resources/imgs/logout-icon.png")); // NOI18N
         jButton1.setToolTipText("Logout");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -934,7 +934,7 @@ public class Pharmacy extends javax.swing.JFrame {
         username1.setText("Login As : ");
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/2572420.postal.envelope.icon.dark.blue.isolated.on.black.background (1).jpg"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("src/resources/imgs/small-envelope-icon.jpg")); // NOI18N
         jButton2.setToolTipText("Public Inbox");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -1402,7 +1402,7 @@ public class Pharmacy extends javax.swing.JFrame {
         jPanel1.add(movedrug1);
         movedrug1.setBounds(860, 310, 150, 31);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/rsz_1rsz_16314569-telephone-round-gray-web-icon-on-black-background-stock-photo-phone.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("src/resources/imgs/phone-icon.jpg")); // NOI18N
         jLabel6.setText("jLabel6");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(0, 450, 80, 80);
@@ -1457,7 +1457,7 @@ public class Pharmacy extends javax.swing.JFrame {
         jPanel1.add(retdrug);
         retdrug.setBounds(338, 235, 150, 31);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/capsule.pill.health.medicine (1).jpg"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon("src/resources/imgs/pharmacy-background.jpg")); // NOI18N
         jPanel1.add(jLabel13);
         jLabel13.setBounds(0, 74, 1220, 520);
 

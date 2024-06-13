@@ -91,35 +91,41 @@ public class Login extends javax.swing.JFrame {
         }
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton1ActionPerformed
-        if (id.getText().equals("") || pass.getText().equals("")) {
+    @SuppressWarnings("unlikely-arg-type")
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton1ActionPerformed
+        if (id.getText().equals("") || pass.getPassword().equals("")) {
             JOptionPane.showMessageDialog(null, "Complete Your Login Information", "Missing Information", 2);
         } else {
-            String sql = "select ID,NAME,PASSWORD from users where ID='" + id.getText() + "' ";
-            try {
-                pre = con.prepareStatement(sql);
-                res = pre.executeQuery();
-                if (res.next()) {
-                    NAME = res.getString("NAME");
-                    if (res.getString("PASSWORD").equals(pass.getText())) {
-                        // Pharmacy pharmacy = new Pharmacy();
-                        // if (id.getText().equals("1")) {
-                        // this.dispose();
-                        // pharmacy.setVisible(true);
-                        // } else {
-                        // this.dispose();
-                        // pharmacy.setVisible(true);
-                        // }
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Wrong Password", "Failed Access", 2);
-                    }
-                } else {
-                    JOptionPane.showMessageDialog(null, "Wrong ID", "Failed Access", 2);
-                }
+                Pharmacy pharmacy = new Pharmacy();
+                pharmacy.setVisible(true);
 
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e.getMessage(), "Error", 2);
-            }
+        //     String sql = "select ID,NAME,PASSWORD from users where ID='" + id.getText() + "' ";
+        //     try {
+        //         pre = con.prepareStatement(sql);
+        //         res = pre.executeQuery();
+        //         if (res.next()) {
+        //         if (true) {
+        //             NAME = res.getString("NAME");
+        //             if (res.getString("PASSWORD").equals(pass.getPassword())) {
+        //                 Pharmacy pharmacy = new Pharmacy();
+        //                 if (id.getText().equals("1")) {
+        //                 this.dispose();
+        //                 pharmacy.setVisible(true);
+        //                 } else {
+        //                 this.dispose();
+        //                 pharmacy.setVisible(true);
+        //                 }
+        //             } else {
+        //                 JOptionPane.showMessageDialog(null, "Wrong Password", "Failed Access", 2);
+        //             }
+        //         }
+        //         else {
+        //             JOptionPane.showMessageDialog(null, "Wrong ID", "Failed Access", 2);
+        //         }
+
+        //     } catch (Exception e) {
+        //         JOptionPane.showMessageDialog(null, e.getMessage(), "Error", 2);
+        //     }
         }
     }
 
