@@ -11,10 +11,8 @@ import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 import java.awt.Toolkit;
-import javax.swing.ImageIcon;
 import classes.*;
 import utils.DBConnection;
-import modules.Warning;
 
 public class Pharmacy extends javax.swing.JFrame {
 
@@ -179,13 +177,6 @@ public class Pharmacy extends javax.swing.JFrame {
         }
     }
 
-
-    private void uservis(){
-        adduser.setVisible(true);
-        deleteuser.setVisible(true);
-        updateuser.setVisible(true);
-
-    }
     private void enteruser(){
         userB.setEnabled(false);
         drugs.setEnabled(true);
@@ -654,8 +645,8 @@ public class Pharmacy extends javax.swing.JFrame {
         new Login().setVisible(true);
     }//GEN-LAST:event_logoutActionPerformed
 
-    private void salesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salesActionPerformed
-        // sales();
+    private void salesActionPerformed(java.awt.event.ActionEvent evt) {
+        sales();
     }
 
     private void purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_purchaseActionPerformed
