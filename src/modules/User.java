@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 import org.netbeans.lib.awtextra.AbsoluteConstraints;
+import org.netbeans.lib.awtextra.AbsoluteLayout;
 
 import net.proteanit.sql.DbUtils;
 
@@ -104,7 +105,7 @@ public class User extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel1.setLayout(new AbsoluteConstraints(FRAMEBITS, ERROR, ALLBITS, ABORT));
+        jPanel1.setLayout(new AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
@@ -136,60 +137,60 @@ public class User extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("DOB : ");
-        jPanel3.add(jLabel3, AbsoluteConstraints(16, 113, -1, -1));
+        jPanel3.add(jLabel3, new AbsoluteConstraints(16, 113, -1, -1));
 
         day.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day : ", "1", "2", "3", "4", "5", "6", "7",
                 "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24",
                 "25", "26", "27", "28", "29", "30", "31" }));
-        jPanel3.add(day, AbsoluteConstraints(151, 110, -1, -1));
-        jPanel3.add(phone, AbsoluteConstraints(151, 243, 188, -1));
+        jPanel3.add(day, new AbsoluteConstraints(151, 110, -1, -1));
+        jPanel3.add(phone, new AbsoluteConstraints(151, 243, 188, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setText("Phone : ");
-        jPanel3.add(jLabel5, AbsoluteConstraints(16, 246, -1, -1));
+        jPanel3.add(jLabel5, new AbsoluteConstraints(16, 246, -1, -1));
 
         address.setColumns(20);
         address.setRows(5);
         jScrollPane1.setViewportView(address);
 
-        jPanel3.add(jScrollPane1, AbsoluteConstraints(151, 148, 188, 72));
+        jPanel3.add(jScrollPane1, new AbsoluteConstraints(151, 148, 188, 72));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("User_Name : ");
-        jPanel3.add(jLabel2, AbsoluteConstraints(16, 72, -1, -1));
-        jPanel3.add(name, AbsoluteConstraints(151, 69, 188, -1));
-        jPanel3.add(salary, AbsoluteConstraints(151, 291, 188, -1));
+        jPanel3.add(jLabel2, new AbsoluteConstraints(16, 72, -1, -1));
+        jPanel3.add(name, new AbsoluteConstraints(151, 69, 188, -1));
+        jPanel3.add(salary, new AbsoluteConstraints(151, 291, 188, -1));
 
         month.setModel(new javax.swing.DefaultComboBoxModel<>(
                 new String[] { "Month : ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
-        jPanel3.add(month, AbsoluteConstraints(211, 110, -1, -1));
+        jPanel3.add(month, new AbsoluteConstraints(211, 110, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setText("Address : ");
-        jPanel3.add(jLabel4, AbsoluteConstraints(16, 160, -1, -1));
+        jPanel3.add(jLabel4, new AbsoluteConstraints(16, 160, -1, -1));
 
         year.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Year : ", "1970", "1971", "1972", "1973",
                 "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986",
                 "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999",
                 "2000", "2001", "2002", "2003", "2004", "2005", "2006", " " }));
-        jPanel3.add(year, AbsoluteConstraints(282, 110, -1, -1));
+        jPanel3.add(year, new AbsoluteConstraints(282, 110, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setText("Salary : ");
-        jPanel3.add(jLabel6, AbsoluteConstraints(16, 294, -1, -1));
+        jPanel3.add(jLabel6, new AbsoluteConstraints(16, 294, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setText("Password : ");
-        jPanel3.add(jLabel7, AbsoluteConstraints(16, 341, -1, -1));
-        jPanel3.add(password, AbsoluteConstraints(151, 338, 188, -1));
+        jPanel3.add(jLabel7, new AbsoluteConstraints(16, 341, -1, -1));
+        jPanel3.add(password, new AbsoluteConstraints(151, 338, 188, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setText("User_Id : ");
-        jPanel3.add(jLabel8, AbsoluteConstraints(16, 31, -1, -1));
-        jPanel3.add(id, AbsoluteConstraints(151, 28, 188, -1));
+        jPanel3.add(jLabel8, new AbsoluteConstraints(16, 31, -1, -1));
+        jPanel3.add(id, new AbsoluteConstraints(151, 28, 188, -1));
 
-        jPanel1.add(jPanel3, AbsoluteConstraints(24, 91, 406, 390));
-        jPanel1.add(jSeparator1, AbsoluteConstraints(20, 490, 406, -1));
+        jPanel1.add(jPanel3, new AbsoluteConstraints(24, 91, 406, 390));
+        jPanel1.add(jSeparator1, new AbsoluteConstraints(20, 490, 406, -1));
 
         jPanel4.setBackground(new java.awt.Color(51, 51, 51));
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -202,7 +203,7 @@ public class User extends javax.swing.JFrame {
                 deleteuserActionPerformed(evt);
             }
         });
-        jPanel4.add(deleteuser, AbsoluteConstraints(220, 13, -1, -1));
+        jPanel4.add(deleteuser, new AbsoluteConstraints(220, 13, -1, -1));
 
         adduser.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adduser.setText("Add User");
@@ -211,7 +212,7 @@ public class User extends javax.swing.JFrame {
                 adduserActionPerformed(evt);
             }
         });
-        jPanel4.add(adduser, AbsoluteConstraints(12, 13, 89, -1));
+        jPanel4.add(adduser, new AbsoluteConstraints(12, 13, 89, -1));
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton4.setText("Clear");
@@ -220,7 +221,7 @@ public class User extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton4, AbsoluteConstraints(10, 50, 90, -1));
+        jPanel4.add(jButton4, new AbsoluteConstraints(10, 50, 90, -1));
 
         updateuser.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         updateuser.setText("Update User");
@@ -229,7 +230,7 @@ public class User extends javax.swing.JFrame {
                 updateuserActionPerformed(evt);
             }
         });
-        jPanel4.add(updateuser, AbsoluteConstraints(107, 13, -1, -1));
+        jPanel4.add(updateuser, new AbsoluteConstraints(107, 13, -1, -1));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton6.setText("Cancel");
@@ -238,9 +239,9 @@ public class User extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton6, AbsoluteConstraints(325, 13, -1, -1));
+        jPanel4.add(jButton6, new AbsoluteConstraints(325, 13, -1, -1));
 
-        jPanel1.add(jPanel4, AbsoluteConstraints(20, 510, 406, 80));
+        jPanel1.add(jPanel4, new AbsoluteConstraints(20, 510, 406, 80));
 
         jPanel5.setBackground(new java.awt.Color(51, 51, 51));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Users Table",
@@ -296,7 +297,7 @@ public class User extends javax.swing.JFrame {
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 365, Short.MAX_VALUE)
                                 .addContainerGap()));
 
-        jPanel1.add(jPanel5, AbsoluteConstraints(436, 91, 467, -1));
+        jPanel1.add(jPanel5, new AbsoluteConstraints(436, 91, 467, -1));
 
         jPanel6.setBackground(new java.awt.Color(51, 51, 51));
         jPanel6.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -332,7 +333,7 @@ public class User extends javax.swing.JFrame {
                                 .addComponent(jLabel10)
                                 .addContainerGap()));
 
-        jPanel1.add(jPanel6, AbsoluteConstraints(440, 510, 460, 80));
+        jPanel1.add(jPanel6, new AbsoluteConstraints(440, 510, 460, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -579,7 +579,7 @@ public class Pharmacy extends javax.swing.JFrame {
     }
 
     private void expired1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO: new Expired_Drug().setVisible(true);
+        new ExpiredDrug().setVisible(true);
     }
 
     private void logindetailsActionPerformed(java.awt.event.ActionEvent evt) {
@@ -587,15 +587,15 @@ public class Pharmacy extends javax.swing.JFrame {
     }
 
     private void buydrugActionPerformed(java.awt.event.ActionEvent evt) {
-        // buy_drug.setVisible(true);
-        // buy_drug.makedeal.setEnabled(true);
-        // buy_drug.update.setEnabled(false);
+        buy_drug.setVisible(true);
+        buy_drug.makedeal.setEnabled(true);
+        buy_drug.update.setEnabled(false);
     }
 
     private void updatedealsActionPerformed(java.awt.event.ActionEvent evt) {
-        // buy_drug.setVisible(true);
-        // buy_drug.update.setEnabled(true);
-        // buy_drug.makedeal.setEnabled(false);
+        buy_drug.setVisible(true);
+        buy_drug.update.setEnabled(true);
+        buy_drug.makedeal.setEnabled(false);
     }
 
     private void alldealsActionPerformed(java.awt.event.ActionEvent evt) {
@@ -629,7 +629,7 @@ public class Pharmacy extends javax.swing.JFrame {
     }
 
     private void movedrug1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_movedrug1ActionPerformed
-        // TODO: new MoveDrug().setVisible(true);
+        new MoveDrug().setVisible(true);
     }//GEN-LAST:event_movedrug1ActionPerformed
 
     private void druglistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_druglistActionPerformed
@@ -637,7 +637,7 @@ public class Pharmacy extends javax.swing.JFrame {
     }//GEN-LAST:event_druglistActionPerformed
 
     private void checkplaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkplaceActionPerformed
-        // TODO: new MoveDrug().setVisible(true);
+        new MoveDrug().setVisible(true);
     }//GEN-LAST:event_checkplaceActionPerformed
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
@@ -697,7 +697,7 @@ public class Pharmacy extends javax.swing.JFrame {
     }//GEN-LAST:event_settingActionPerformed
 
     private void movedrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_movedrugActionPerformed
-        // TODO: new Drug_List().setVisible(true);
+        new DrugList().setVisible(true);
     }//GEN-LAST:event_movedrugActionPerformed
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
@@ -726,50 +726,51 @@ public class Pharmacy extends javax.swing.JFrame {
     }//GEN-LAST:event_drugdetailsActionPerformed
 
     private void searchdrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchdrugActionPerformed
-        // TODO: new Search_Drug().setVisible(true);
-    }//GEN-LAST:event_searchdrugActionPerformed
+        new SearchDrug().setVisible(true);
+    }
 
     private void updatedrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updatedrugActionPerformed
-        // drug.setVisible(true);
-        // drug.adddrug.setEnabled(false);
-        // drug.deletedrug.setEnabled(false);
-        // drug.updatedrug.setEnabled(true);
-    }//GEN-LAST:event_updatedrugActionPerformed
+        drug.setVisible(true);
+        drug.adddrug.setEnabled(false);
+        drug.deletedrug.setEnabled(false);
+        drug.updatedrug.setEnabled(true);
+    }
 
     private void deletedrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletedrugActionPerformed
-        // drug.setVisible(true);
-        // drug.updatedrug.setEnabled(false);
-        // drug.adddrug.setEnabled(false);
-        // drug.deletedrug.setEnabled(true);
-    }//GEN-LAST:event_deletedrugActionPerformed
+        drug.setVisible(true);
+        drug.updatedrug.setEnabled(false);
+        drug.adddrug.setEnabled(false);
+        drug.deletedrug.setEnabled(true);
+    }
 
     private void adddrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adddrugActionPerformed
-        // drug.setVisible(true);
-        // drug.updatedrug.setEnabled(false);
-        // drug.deletedrug.setEnabled(false);
-        // drug.adddrug.setEnabled(true);
-    }//GEN-LAST:event_adddrugActionPerformed
+        drug.setVisible(true);
+        drug.updatedrug.setEnabled(false);
+        drug.deletedrug.setEnabled(false);
+        drug.adddrug.setEnabled(true);
+    }
 
+    @SuppressWarnings("static-access")
     private void updateuserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateuserActionPerformed
-        // user.setVisible(true);
-        // user.deleteuser.setEnabled(false);
-        // user.adduser.setEnabled(false);
-        // user.updateuser.setEnabled(true);
-        // user.id.setEditable(false);
-    }//GEN-LAST:event_updateuserActionPerformed
+        user.setVisible(true);
+        user.deleteuser.setEnabled(false);
+        user.adduser.setEnabled(false);
+        user.updateuser.setEnabled(true);
+        user.id.setEditable(false);
+    }
 
     private void deleteuserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteuserActionPerformed
-        // user.setVisible(true);
-        // user.adduser.setEnabled(false);
-        // user.updateuser.setEnabled(false);
-        // user.deleteuser.setEnabled(true);
-    }//GEN-LAST:event_deleteuserActionPerformed
+        user.setVisible(true);
+        user.adduser.setEnabled(false);
+        user.updateuser.setEnabled(false);
+        user.deleteuser.setEnabled(true);
+    }
 
     private void adduserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adduserActionPerformed
-        // user.setVisible(true);
-        // user.deleteuser.setEnabled(false);
-        // user.updateuser.setEnabled(false);
-        // user.adduser.setEnabled(true);
+        user.setVisible(true);
+        user.deleteuser.setEnabled(false);
+        user.updateuser.setEnabled(false);
+        user.adduser.setEnabled(true);
     }//GEN-LAST:event_adduserActionPerformed
 
     private void drugsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_drugsActionPerformed
