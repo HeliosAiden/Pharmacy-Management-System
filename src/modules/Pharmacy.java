@@ -575,7 +575,7 @@ public class Pharmacy extends javax.swing.JFrame {
     }
 
     private void renew_validateActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO: new Renew_Validity().setVisible(true);
+        new RenewValidity().setVisible(true);
     }
 
     private void expired1ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -599,7 +599,7 @@ public class Pharmacy extends javax.swing.JFrame {
     }
 
     private void alldealsActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO: new All_Deal().setVisible(true);
+        new AllDeal().setVisible(true);
     }
 
     private void salesbillActionPerformed(java.awt.event.ActionEvent evt) {
@@ -630,20 +630,20 @@ public class Pharmacy extends javax.swing.JFrame {
 
     private void movedrug1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_movedrug1ActionPerformed
         new MoveDrug().setVisible(true);
-    }//GEN-LAST:event_movedrug1ActionPerformed
+    }
 
     private void druglistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_druglistActionPerformed
-        // TODO: new DrugList().setVisible(true);
-    }//GEN-LAST:event_druglistActionPerformed
+        new DrugList().setVisible(true);
+    }
 
     private void checkplaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkplaceActionPerformed
         new MoveDrug().setVisible(true);
-    }//GEN-LAST:event_checkplaceActionPerformed
+    }
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
         this.dispose();
         new Login().setVisible(true);
-    }//GEN-LAST:event_logoutActionPerformed
+    }
 
     private void salesActionPerformed(java.awt.event.ActionEvent evt) {
         sales();
