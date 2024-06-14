@@ -422,24 +422,24 @@ public class BuyDrug extends javax.swing.JFrame {
                     pre.execute();
                     int confirm = JOptionPane.showConfirmDialog(null, "Deal has been made\n\nAdd This Drug ?",
                             "Success Operation", 1);
-                    // TODO: Drug d;
+                    Drug d;
                     if (confirm == 0) {
                         this.dispose();
-                        // d = new Drug();
-                        // d.setVisible(true);
-                        // d.barcode.setText(barcode.getText());
-                        // d.name.setText(name.getText());
-                        // d.type.setSelectedItem(type.getSelectedItem());
-                        // d.company_name.setSelectedItem(company_name.getSelectedItem());
-                        // d.quantity.setSelectedItem(quantity.getSelectedItem());
-                        // d.cost_price.setText(cost_price.getText());
+                        d = new Drug();
+                        d.setVisible(true);
+                        d.barcode.setText(barcode.getText());
+                        d.name.setText(name.getText());
+                        d.type.setSelectedItem(type.getSelectedItem());
+                        d.company_name.setSelectedItem(company_name.getSelectedItem());
+                        d.quantity.setSelectedItem(quantity.getSelectedItem());
+                        d.cost_price.setText(cost_price.getText());
                     }
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, e.getMessage(), "Error", 2);
                 }
             }
         }
-    }// GEN-LAST:event_makedealActionPerformed
+    }
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_updateActionPerformed
         if (barcode.getText().equals("") || cost_price.getText().equals("") || amount.getText().equals("") ||
